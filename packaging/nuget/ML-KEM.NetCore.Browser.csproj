@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <IsPackable>true</IsPackable>
+    <NoBuild>true</NoBuild>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <PackageId>ML-KEM.NetCore.Browser</PackageId>
+    <Title>ML-KEM.NetCore.Browser</Title>
+    <Description>ML-KEM.NetCore.Browser is a pure managed pure js implementation of the NIST-standardized ML-KEM (Kyber) post-quantum key encapsulation mechanism. </Description>
+    <Authors>Timothy D Meadows II</Authors>
+    <RepositoryUrl>https://github.com/TimothyMeadows/ML-KEM.NetCore.Browser</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>ml-kem;kyber;post-quantum;cryptography;browser;javascript</PackageTags>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>1.0.0</Version>
+    <PackageProjectUrl>https://github.com/TimothyMeadows/ML-KEM.NetCore.Browser</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" Visible="false" />
+    <None Include="..\..\LICENSE" Pack="true" PackagePath="\" Visible="false" />
+    <None Include="..\..\dist\ML-KEM.NetCore.Browser.js" Pack="true" PackagePath="wwwroot\ML-KEM.NetCore.Browser.js" Visible="false" />
+  </ItemGroup>
+</Project>

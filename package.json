@@ -1,0 +1,37 @@
+{
+  "name": "ml-kem.netcore.browser",
+  "version": "0.1.0",
+  "description": "Pure JavaScript browser companion package for ML-KEM.NetCore (ML-KEM-768).",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./params": "./src/params.js",
+    "./mlkem": "./src/mlkem.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "dist"
+  ],
+  "keywords": [
+    "ml-kem",
+    "kyber",
+    "post-quantum",
+    "cryptography",
+    "browser"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test test/*.js",
+    "pack:check": "npm pack --dry-run",
+    "build:bundle": "webpack --config webpack.config.cjs",
+    "build": "npm run build:bundle"
+  },
+  "displayName": "ML-KEM.NetCore.Browser",
+  "devDependencies": {
+    "webpack": "^5.105.4",
+    "webpack-cli": "^7.0.0"
+  }
+}

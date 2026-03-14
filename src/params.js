@@ -1,0 +1,20 @@
+export const MLKEM_768 = Object.freeze({
+  n: 256,
+  q: 3329,
+  k: 3,
+  eta1: 2,
+  eta2: 2,
+  du: 10,
+  dv: 4,
+  seedBytes: 32,
+  sharedSecretBytes: 32,
+  messageBytes: 32,
+  polyBytes: 384,
+  polyCompressedBytesDu: 320,
+  polyCompressedBytesDv: 128,
+  polyVecBytes: 1152,
+  polyVecCompressedBytes: 960,
+  publicKeyBytes: 1184,
+  secretKeyBytes: 2400,
+  ciphertextBytes: 1088
+});
